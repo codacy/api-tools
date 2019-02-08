@@ -1,5 +1,9 @@
 # api-tools
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/efc2aea3f63c404b9237478bd8dc370d)](https://www.codacy.com/app/Codacy/api-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codacy/api-tools&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/codacy/api-tools.svg?style=svg)](https://circleci.com/gh/codacy/api-tools)
+[![](https://images.microbadger.com/badges/version/codacy/api-tools.svg)](https://microbadger.com/images/codacy/api-tools "Get your own version badge on microbadger.com")
+
 Docker with all the API tools used at Codacy
 
 ## Tools
@@ -9,12 +13,6 @@ Docker with all the API tools used at Codacy
     * api2html
     * swagger-cli
     * widdershins
-
-## Build
-
-```sh
-docker build --no-cache -t codacy/api-tools:dev -f Dockerfile.tools .
-```
 
 ## Usage
 
@@ -90,4 +88,21 @@ curl 'http://127.0.0.1:8090/dredd?SWAGGER_LOCATION=%2Fapp%2Fserver%2Fsrc%2Fmain%
 
 ```sh
 curl 'http://127.0.0.1:8090/swaggerCli?SWAGGER_LOCATION=%2Fapp%2Fserver%2Fsrc%2Fmain%2Fresources%2Fapi.yaml'
+```
+
+# Build and Publish
+
+The pipeline in `circleci` can deploy this for you when the code is pushed to the remote.
+
+You can also run everything locally using the makefile
+```
+$ make help
+---------------------------------------------------------------------------------------------------------
+build and deploy help
+---------------------------------------------------------------------------------------------------------
+build                          build docker image
+get-next-version-number        get next version number
+git-tag                        tag the current commit with the next version and push
+push-docker-image              push the docker image to the registry (DOCKER_USER and DOCKER_PASS mandatory)
+push-latest-docker-image       push the docker image with the "latest" tag to the registry (DOCKER_USER and DOCKER_PASS mandatory)
 ```
