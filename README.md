@@ -9,10 +9,10 @@ Docker with all the API tools used at Codacy
 ## Tools
 
 * npmjs.org
-    * dredd
-    * api2html
-    * swagger-cli
-    * widdershins
+  * dredd
+  * api2html
+  * swagger-cli
+  * widdershins
 
 ## Usage
 
@@ -68,13 +68,9 @@ docker run --rm=true -v $PWD:/app \
     --entrypoint=/shell2http-api.sh codacy/api-tools:latest
 ```
 
-#### dredd
+### dredd
 
 > Start application server
-
-```sh
-sbt run
-```
 
 > Perform request to run dredd
 
@@ -82,7 +78,7 @@ sbt run
 curl 'http://127.0.0.1:8090/dredd?SWAGGER_LOCATION=%2Fapp%2Fserver%2Fsrc%2Fmain%2Fresources%2Fapi.yaml&SERVER_URL=http%3A%2F%2F127.0.0.1%3A8080'
 ```
 
-#### swagger-cli
+### swagger-cli
 
 > Perform request to run swagger-cli
 
