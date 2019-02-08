@@ -98,9 +98,9 @@ You can also run everything locally using the makefile:
 
 ```sh
 $ make help
----------------------------------------------------------------------------------------------------------
+
 build and deploy help
----------------------------------------------------------------------------------------------------------
+---------------------
 build                          build docker image
 get-next-version-number        get next version number
 git-tag                        tag the current commit with the next version and push
