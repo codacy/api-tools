@@ -1,6 +1,6 @@
 # api-tools
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/efc2aea3f63c404b9237478bd8dc370d)](https://www.codacy.com/app/Codacy/api-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codacy/api-tools&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/efc2aea3f63c404b9237478bd8dc370d)](https://www.codacy.com/gh/codacy/api-tools?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codacy/api-tools&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/codacy/api-tools.svg?style=svg)](https://circleci.com/gh/codacy/api-tools)
 [![](https://images.microbadger.com/badges/version/codacy/api-tools.svg)](https://microbadger.com/images/codacy/api-tools "Get your own version badge on microbadger.com")
 
